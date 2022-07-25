@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Web Wizerd</title>
+	<meta charset="utf-8">
+	<title>Wev Wizerd</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <label class="button_info" for="files">Please Select Photo</label>
-     <br>
-     <input id="files" type="file" multiple="multiple">
-     
-    <section>
-     <div class="zoom_outer">
-          <div id="zoom">
-               <output id="result">
-          </div>
-        </div>
-    </section>
-     
-     <script src="./index.js"></script>
+	<form action="#">
+		<label>Browse File to Upload</label>
+		<input id="file" type="file">
+	   </form>
+	   <section>
+          <img id="photo" class='zoom' src='https://wallpaperaccess.com/full/11737.jpg' alt='Daisy!' width='700' height='420'/>
+	   </section>
+
+	
+	<script src="index.js"></script>
+	<script>
+		wheelzoom(document.querySelector('img.zoom'));
+	</script>
 </body>
 </html>
